@@ -2,7 +2,7 @@
 //
 //import java.io.File;
 //
-///**
+///**这个类是递归读盘实例
 // * Created by XQF on 2016/12/23.
 // */
 //public class Demo {

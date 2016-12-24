@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-/**
+/**凡是jPopupMenu的都是测试点击鼠标右键的菜单，还有就是点击弹出的菜单的响应事件
  * Created by XQF on 2016/12/23.
  */
 public class JPopupMenu_1 extends JFrame {

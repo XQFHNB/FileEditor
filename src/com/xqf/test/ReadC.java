@@ -8,6 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
+ * 这个类也只是一个演示类，读取C盘的一些信息
  * Created by XQF on 2016/12/23.
  */
 public class ReadC {

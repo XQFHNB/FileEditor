@@ -3,9 +3,8 @@ package com.xqf.test;
 import javax.swing.filechooser.FileSystemView;
 import java.io.File;
 import java.text.DecimalFormat;
-import java.util.regex.Pattern;
 
-/**
+/** 这个类是用来测试获取盘符的实例，怎么自动获取盘符
  * Created by XQF on 2016/12/23.
  */
 public class GetRoots {

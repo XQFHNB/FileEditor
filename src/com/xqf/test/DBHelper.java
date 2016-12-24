@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
+ * 数据库的帮助类
  * Created by XQF on 2016/12/7.
  */
 public class DBHelper {
@@ -33,10 +34,14 @@ public class DBHelper {
         return new DBHelper();
     }
 
+
+    //获取连接，这是这个类最有用的方法
     public Connection getConnection() {
         return connection;
     }
 
+
+    //关闭连接，单例模式严格使用，不严格的话获取到connection就可以关闭了，这个方法没用
     public void closeConnection() {
         try {
             connection.close();

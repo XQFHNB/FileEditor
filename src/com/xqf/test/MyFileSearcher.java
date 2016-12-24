@@ -16,6 +16,7 @@ import java.util.regex.Pattern;
  * Created by XQF on 2016/12/23.
  */
 
+//向数据库插入数据的任务类
 class ReadfilesInfoAndInsertIntoDbTask implements Runnable {
 
     Connection connection;
@@ -23,6 +24,9 @@ class ReadfilesInfoAndInsertIntoDbTask implements Runnable {
     String sqlString;
 
 
+    /**
+     * 向数据库插入数据
+     */
     public ReadfilesInfoAndInsertIntoDbTask() {
         this.sqlString = "insert into files values(?,?,?)";
         this.connection = DBHelper.getDbHelper().getConnection();
@@ -50,13 +54,15 @@ class ReadfilesInfoAndInsertIntoDbTask implements Runnable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        System.out.println("梅毒D");
+        System.out.println("没读D");
 
 
     }
 
-    //获取盘符
+    //获取盘符，因为我获取的盘符是“本地磁盘(C：)”,我要拿到括号里的字符串
     private String getRoots(String str) {
+
+        //这个正则表达式是获取括号中的数据的，
         Pattern pattern = Pattern.compile("(?<=\\()(.+?)(?=\\))");
         Matcher mat = pattern.matcher(str);
         String result = null;

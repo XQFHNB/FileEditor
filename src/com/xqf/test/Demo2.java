@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-/**
+/**  这个类用来测试点击鼠标右键的弹出菜单的实例
  * Created by XQF on 2016/12/23.
  */
 public class Demo2 {
